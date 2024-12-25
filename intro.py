@@ -6,6 +6,13 @@ https://youtu.be/b0HMimUb4f0?si=7hb3nwBtoiZ0KJdx
 
 https://youtu.be/8vmKtS8W7IQ?si=J1DoOyVXydoBU-2J
 
+https://testdriven.io/blog/fastapi-machine-learning/
+
+https://dev.to/code_jedi/machine-learning-model-deployment-with-fastapi-and-docker-llo
+
+https://machinelearningmastery.com/a-practical-guide-to-deploying-machine-learning-models/
+
+
 '''
 
 # python -m venv mycontainers
@@ -61,10 +68,56 @@ docker compose helps simplify the commands and flags we are using to run our con
 docker-compose up
 docker-compose down
 
+if you make some edits build again
+docker-compose up --build 
+
+run in detach mode
+docker-compose up --build -d 
+
 '''
 
+# app3
+'''
+docker run --name nginx1 -p 5000:80 nginx 
 
+check container logs
+docker logs <CONTAINER ID>
 
+delete all stoped containers
+docker container prune 
+
+tell docker to remove a container once it stops
+docker run --name nginx1 -p 5000:80 --rm nginx 
+
+for production code please tag containers by digest?
+docker images ls --digest
+
+e is for environmental variables 
+
+slim is very small but alpine is even smaller than slim
+slim is based on debian linux ( apt & .deb packages )while alpine is alpine linux 
+(apk & .apk packages) so they have different package manager.
+
+to run commands on an already running container use "exec".
+docker exec -it <CONTAINER SHA DIGEST> /bin/bash
+i means iteractive and t means terminal functionality
+
+volume mounts
+used for persistence - has more features - better in production
+-v ./myfolder:/path/in/container
+container does not need access to host
+
+bind-mounts 
+used for persistence - has less features
+-v ./myfolder:/path/in/container:ro
+the "ro" means read only so that the container can not change data in your host
+
+Tempfs mounts 
+above the scope of this course
+
+CORS - is blocking access to the website given in the html file.
+
+'''
 
 
 
