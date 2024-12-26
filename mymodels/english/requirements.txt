@@ -1,0 +1,6 @@
+
+pandas
+fastapi
+numpy 
+uvicorn
+motor

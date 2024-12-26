@@ -4,8 +4,6 @@ https://youtu.be/0H2miBK_gAk?si=QfjSd_WtlpFKePLh
 
 https://youtu.be/b0HMimUb4f0?si=7hb3nwBtoiZ0KJdx
 
-https://youtu.be/8vmKtS8W7IQ?si=J1DoOyVXydoBU-2J
-
 https://testdriven.io/blog/fastapi-machine-learning/
 
 https://dev.to/code_jedi/machine-learning-model-deployment-with-fastapi-and-docker-llo

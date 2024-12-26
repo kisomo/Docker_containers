@@ -1,0 +1,21 @@
+services:
+
+  herokumodel:
+    image: heroku-model
+    pull_policy: never
+    container_name: heroku-model
+    build:
+      context: . #/english
+      dockerfile: Dockerfile
+      #target: runner
+    ports:
+      - 8008:8008
+    #env_file:
+    #  - ./backend/.env
+    #depends_on:
+    #  - mongodb
+    
+
+
+
+
