@@ -1,0 +1,17 @@
+services:
+
+  house-prices:
+    image: house-prices
+    pull_policy: never
+    container_name: house-prices
+    build:
+      context: . 
+      dockerfile: Dockerfile
+      #target: runner
+    ports:
+      - 80:80
+    #env_file:
+    #  - ./backend/.env
+    #depends_on:
+    #  - mongodb
+    

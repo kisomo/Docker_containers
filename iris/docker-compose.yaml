@@ -1,0 +1,17 @@
+services:
+
+  irismodel:
+    image: iris-model
+    pull_policy: never
+    container_name: iris-model
+    build:
+      context: . #/english
+      dockerfile: Dockerfile
+      #target: runner
+    ports:
+      - 8000:8000
+    #env_file:
+    #  - ./backend/.env
+    #depends_on:
+    #  - mongodb
+  
