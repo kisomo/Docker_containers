@@ -34,7 +34,7 @@ https://machinelearningmastery.com/a-practical-guide-to-deploying-machine-learni
 list all the running containers
 docker ps
 
-list all the containers (bothe running and stopped)
+list all the containers (both running and stopped)
 docker ps --all 
 
 remove all containers
