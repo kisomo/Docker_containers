@@ -35,7 +35,7 @@ services:
       dockerfile: Dockerfile
       #target: runner
     ports:
-      - 8081:8081
+      - 9000:9000
    
   swahili:
     image: greeting-swahili
@@ -46,7 +46,7 @@ services:
       dockerfile: Dockerfile
       #target: runner
     ports:
-      - 8082:8082
+      - 10000:10000
 
   #frontend:
   

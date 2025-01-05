@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 
-app = fastAPI() 
+app = FastAPI() 
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,7 +1,7 @@
-from fastapi import fastAPI  
+from fastapi import FastAPI  
 import uvicorn 
 
-app = fastAPI() 
+app = FastAPI() 
 
 @app.get("/")
 def greetings():

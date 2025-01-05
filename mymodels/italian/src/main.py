@@ -1,9 +1,9 @@
 
-from fastapi import fastAPI      
+from fastapi import FastAPI      
 import uvicorn  
 from motor.motor_asyncio import AsyncIOMotorClient
 
-app = fastAP()
+app = FastAPI()
 
 @app.get("/")
 async def greetings():
