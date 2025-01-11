@@ -13,8 +13,8 @@ https://machinelearningmastery.com/a-practical-guide-to-deploying-machine-learni
 
 '''
 
-# python -m venv mycontainers
-# mycontainers\Scripts\Activate.ps1
+# python -m venv windowsserver
+# windowsserver\Scripts\Activate.ps1
 # python.exe -m pip install --upgrade pip
 # pip3 install -r requirements.txt
 # pip install ipykernel 
